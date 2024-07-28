@@ -4,6 +4,7 @@
 
 #include "CoreMinimal.h"
 #include "Engine/GameInstance.h"
+#include "MenuSystem/MenuInterface.h"
 #include "PuzzlePlatformGameInstance.generated.h"
 
 /**
@@ -13,7 +14,7 @@
 //FclassFinder :FClassFinder는 컴파일 타임에 에셋을 찾고 로드할 때 사용하는 템플릿 클래스 
 
 UCLASS()
-class PUZZLEPLATFORMS_API UPuzzlePlatformGameInstance : public UGameInstance
+class PUZZLEPLATFORMS_API UPuzzlePlatformGameInstance : public UGameInstance, public IMenuInterface 
 {
 	GENERATED_BODY()
 
@@ -39,5 +40,5 @@ public:		UPuzzlePlatformGameInstance
 
 private:
 	TSubclassOf<class UUserWidget> MenuClass;
-	
+	class UMainMenu* Menu;
 };

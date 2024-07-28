@@ -7,6 +7,7 @@
 #include "PlatformTrigger.h"
 #include "Engine/Engine.h"
 #include "Widgets/SWidget.h"
+#include "MenuSystem/MainMenu.h"
 #include "GameFramework/PlayerController.h"
 UPuzzlePlatformGameInstance::UPuzzlePlatformGameInstance(const FObjectInitializer& ObjectInitializer) 
 {
@@ -34,27 +35,23 @@ void UPuzzlePlatformGameInstance::Init()
 void UPuzzlePlatformGameInstance::LoadMenu()
 {
 	if (!ensure(MenuClass != nullptr)) return;
-	UUserWidget* Menu = CreateWidget<UUserWidget>(this, MenuClass);
+	Menu = CreateWidget<UMainMenu>(this, MenuClass);
 	if (!ensure(Menu != nullptr)) return;
 
 	
 
-	Menu->AddToViewport();
-
-	APlayerController* PlayerController = GetFirstLocalPlayerController();
-	if (!ensure(PlayerController != nullptr)) return;
-
-	FInputModeUIOnly InputModeData;
-	InputModeData.SetWidgetToFocus(Menu->TakeWidget());
-	InputModeData.SetLockMouseToViewportBehavior(EMouseLockMode::DoNotLock);
-
-	PlayerController->SetInputMode(InputModeData);
-	PlayerController->bShowMouseCursor = true;
+	Menu->SetUp();
+	Menu->SetMenuInterface(this);
 
 }
 
 void UPuzzlePlatformGameInstance::Host()
 {
+	if (Menu != nullptr)
+	{
+		Menu->TearDown();
+	}
+
 	UEngine* Engine = GetEngine();
 	if (!ensure(Engine != nullptr)) return;
 	Engine->AddOnScreenDebugMessage(0, 5.f, FColor::Green, TEXT("This is host"));
@@ -64,6 +61,8 @@ void UPuzzlePlatformGameInstance::Host()
 
 	World->ServerTravel("/Game/ThirdPersonCPP/Maps/ThirdPersonExampleMap?listen"); 
 
+
+	
 	//listen <<- 플레이어가 직접 호스팅하는 서버 
 
 }
