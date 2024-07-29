@@ -1,0 +1,158 @@
+﻿  Main.cpp
+C:\Users\User\Downloads\sdk\steamworksexample\Main.cpp(1,1): error C2220: 다음 경고는 오류로 처리됩니다.
+C:\Users\User\Downloads\sdk\steamworksexample\Main.cpp(1,1): warning C4819: 현재 코드 페이지(949)에서 표시할 수 없는 문자가 파일에 들어 있습니다. 데이터가 손실되지 않게 하려면 해당 파일을 유니코드 형식으로 저장하십시오.
+C:\Users\User\Downloads\sdk\steamworksexample\stdafx.h(1,1): warning C4819: 현재 코드 페이지(949)에서 표시할 수 없는 문자가 파일에 들어 있습니다. 데이터가 손실되지 않게 하려면 해당 파일을 유니코드 형식으로 저장하십시오. (소스 파일 컴파일 중 Main.cpp)
+  stdafx.cpp
+  gameenginewin32.cpp
+  VectorEntity.cpp
+  BaseMenu.cpp
+  clanchatroom.cpp
+C:\Users\User\Downloads\sdk\steamworksexample\stdafx.cpp(1,1): error C2220: 다음 경고는 오류로 처리됩니다.
+C:\Users\User\Downloads\sdk\steamworksexample\stdafx.cpp(1,1): warning C4819: 현재 코드 페이지(949)에서 표시할 수 없는 문자가 파일에 들어 있습니다. 데이터가 손실되지 않게 하려면 해당 파일을 유니코드 형식으로 저장하십시오.
+C:\Users\User\Downloads\sdk\steamworksexample\stdafx.h(1,1): warning C4819: 현재 코드 페이지(949)에서 표시할 수 없는 문자가 파일에 들어 있습니다. 데이터가 손실되지 않게 하려면 해당 파일을 유니코드 형식으로 저장하십시오. (소스 파일 컴파일 중 stdafx.cpp)
+C:\Users\User\Downloads\sdk\steamworksexample\gameenginewin32.cpp(1,1): error C2220: 다음 경고는 오류로 처리됩니다.
+C:\Users\User\Downloads\sdk\steamworksexample\gameenginewin32.cpp(1,1): warning C4819: 현재 코드 페이지(949)에서 표시할 수 없는 문자가 파일에 들어 있습니다. 데이터가 손실되지 않게 하려면 해당 파일을 유니코드 형식으로 저장하십시오.
+C:\Users\User\Downloads\sdk\steamworksexample\stdafx.h(1,1): warning C4819: 현재 코드 페이지(949)에서 표시할 수 없는 문자가 파일에 들어 있습니다. 데이터가 손실되지 않게 하려면 해당 파일을 유니코드 형식으로 저장하십시오. (소스 파일 컴파일 중 gameenginewin32.cpp)
+C:\Users\User\Downloads\sdk\steamworksexample\VectorEntity.cpp(1,1): error C2220: 다음 경고는 오류로 처리됩니다.
+C:\Users\User\Downloads\sdk\steamworksexample\VectorEntity.cpp(1,1): warning C4819: 현재 코드 페이지(949)에서 표시할 수 없는 문자가 파일에 들어 있습니다. 데이터가 손실되지 않게 하려면 해당 파일을 유니코드 형식으로 저장하십시오.
+C:\Users\User\Downloads\sdk\steamworksexample\stdafx.h(1,1): warning C4819: 현재 코드 페이지(949)에서 표시할 수 없는 문자가 파일에 들어 있습니다. 데이터가 손실되지 않게 하려면 해당 파일을 유니코드 형식으로 저장하십시오. (소스 파일 컴파일 중 VectorEntity.cpp)
+C:\Users\User\Downloads\sdk\steamworksexample\BaseMenu.cpp(1,1): error C2220: 다음 경고는 오류로 처리됩니다.
+C:\Users\User\Downloads\sdk\steamworksexample\BaseMenu.cpp(1,1): warning C4819: 현재 코드 페이지(949)에서 표시할 수 없는 문자가 파일에 들어 있습니다. 데이터가 손실되지 않게 하려면 해당 파일을 유니코드 형식으로 저장하십시오.
+  connectingmenu.cpp
+C:\Users\User\Downloads\sdk\steamworksexample\stdafx.h(1,1): warning C4819: 현재 코드 페이지(949)에서 표시할 수 없는 문자가 파일에 들어 있습니다. 데이터가 손실되지 않게 하려면 해당 파일을 유니코드 형식으로 저장하십시오. (소스 파일 컴파일 중 BaseMenu.cpp)
+  Friends.cpp
+  htmlsurface.cpp
+  Inventory.cpp
+  ItemStore.cpp
+  Leaderboards.cpp
+  Lobby.cpp
+  MainMenu.cpp
+  musicplayer.cpp
+  OverlayExamples.cpp
+  p2pauth.cpp
+  PhotonBeam.cpp
+  QuitMenu.cpp
+  RemotePlay.cpp
+C:\Users\User\Downloads\sdk\steamworksexample\stdafx.h(1,1): error C2220: 다음 경고는 오류로 처리됩니다. (소스 파일 컴파일 중 clanchatroom.cpp)
+  RemoteStorage.cpp
+  remotestoragesync.cpp
+  ServerBrowser.cpp
+  Ship.cpp
+  SimpleProtobuf.cpp
+C:\Users\User\Downloads\sdk\steamworksexample\connectingmenu.cpp(1,1): error C2220: 다음 경고는 오류로 처리됩니다.
+  SpaceWarClient.cpp
+  SpaceWarEntity.cpp
+  SpaceWarServer.cpp
+C:\Users\User\Downloads\sdk\steamworksexample\stdafx.h(1,1): warning C4819: 현재 코드 페이지(949)에서 표시할 수 없는 문자가 파일에 들어 있습니다. 데이터가 손실되지 않게 하려면 해당 파일을 유니코드 형식으로 저장하십시오. (소스 파일 컴파일 중 clanchatroom.cpp)
+C:\Users\User\Downloads\sdk\steamworksexample\connectingmenu.cpp(1,1): warning C4819: 현재 코드 페이지(949)에서 표시할 수 없는 문자가 파일에 들어 있습니다. 데이터가 손실되지 않게 하려면 해당 파일을 유니코드 형식으로 저장하십시오.
+C:\Users\User\Downloads\sdk\steamworksexample\stdafx.h(1,1): warning C4819: 현재 코드 페이지(949)에서 표시할 수 없는 문자가 파일에 들어 있습니다. 데이터가 손실되지 않게 하려면 해당 파일을 유니코드 형식으로 저장하십시오. (소스 파일 컴파일 중 connectingmenu.cpp)
+C:\Users\User\Downloads\sdk\steamworksexample\htmlsurface.cpp(1,1): error C2220: 다음 경고는 오류로 처리됩니다.
+C:\Users\User\Downloads\sdk\steamworksexample\htmlsurface.cpp(1,1): warning C4819: 현재 코드 페이지(949)에서 표시할 수 없는 문자가 파일에 들어 있습니다. 데이터가 손실되지 않게 하려면 해당 파일을 유니코드 형식으로 저장하십시오.
+C:\Users\User\Downloads\sdk\steamworksexample\stdafx.h(1,1): warning C4819: 현재 코드 페이지(949)에서 표시할 수 없는 문자가 파일에 들어 있습니다. 데이터가 손실되지 않게 하려면 해당 파일을 유니코드 형식으로 저장하십시오. (소스 파일 컴파일 중 htmlsurface.cpp)
+C:\Users\User\Downloads\sdk\steamworksexample\Friends.cpp(1,1): error C2220: 다음 경고는 오류로 처리됩니다.
+C:\Users\User\Downloads\sdk\steamworksexample\Friends.cpp(1,1): warning C4819: 현재 코드 페이지(949)에서 표시할 수 없는 문자가 파일에 들어 있습니다. 데이터가 손실되지 않게 하려면 해당 파일을 유니코드 형식으로 저장하십시오.
+C:\Users\User\Downloads\sdk\steamworksexample\stdafx.h(1,1): warning C4819: 현재 코드 페이지(949)에서 표시할 수 없는 문자가 파일에 들어 있습니다. 데이터가 손실되지 않게 하려면 해당 파일을 유니코드 형식으로 저장하십시오. (소스 파일 컴파일 중 Friends.cpp)
+C:\Users\User\Downloads\sdk\steamworksexample\ItemStore.cpp(1,1): error C2220: 다음 경고는 오류로 처리됩니다.
+C:\Users\User\Downloads\sdk\steamworksexample\ItemStore.cpp(1,1): warning C4819: 현재 코드 페이지(949)에서 표시할 수 없는 문자가 파일에 들어 있습니다. 데이터가 손실되지 않게 하려면 해당 파일을 유니코드 형식으로 저장하십시오.
+C:\Users\User\Downloads\sdk\steamworksexample\stdafx.h(1,1): warning C4819: 현재 코드 페이지(949)에서 표시할 수 없는 문자가 파일에 들어 있습니다. 데이터가 손실되지 않게 하려면 해당 파일을 유니코드 형식으로 저장하십시오. (소스 파일 컴파일 중 ItemStore.cpp)
+C:\Users\User\Downloads\sdk\steamworksexample\Lobby.cpp(1,1): error C2220: 다음 경고는 오류로 처리됩니다.
+C:\Users\User\Downloads\sdk\steamworksexample\Lobby.cpp(1,1): warning C4819: 현재 코드 페이지(949)에서 표시할 수 없는 문자가 파일에 들어 있습니다. 데이터가 손실되지 않게 하려면 해당 파일을 유니코드 형식으로 저장하십시오.
+C:\Users\User\Downloads\sdk\steamworksexample\stdafx.h(1,1): warning C4819: 현재 코드 페이지(949)에서 표시할 수 없는 문자가 파일에 들어 있습니다. 데이터가 손실되지 않게 하려면 해당 파일을 유니코드 형식으로 저장하십시오. (소스 파일 컴파일 중 Lobby.cpp)
+C:\Users\User\Downloads\sdk\steamworksexample\Leaderboards.cpp(1,1): error C2220: 다음 경고는 오류로 처리됩니다.
+C:\Users\User\Downloads\sdk\steamworksexample\Leaderboards.cpp(1,1): warning C4819: 현재 코드 페이지(949)에서 표시할 수 없는 문자가 파일에 들어 있습니다. 데이터가 손실되지 않게 하려면 해당 파일을 유니코드 형식으로 저장하십시오.
+C:\Users\User\Downloads\sdk\steamworksexample\Inventory.cpp(1,1): error C2220: 다음 경고는 오류로 처리됩니다.
+C:\Users\User\Downloads\sdk\steamworksexample\Inventory.cpp(1,1): warning C4819: 현재 코드 페이지(949)에서 표시할 수 없는 문자가 파일에 들어 있습니다. 데이터가 손실되지 않게 하려면 해당 파일을 유니코드 형식으로 저장하십시오.
+C:\Users\User\Downloads\sdk\steamworksexample\stdafx.h(1,1): warning C4819: 현재 코드 페이지(949)에서 표시할 수 없는 문자가 파일에 들어 있습니다. 데이터가 손실되지 않게 하려면 해당 파일을 유니코드 형식으로 저장하십시오. (소스 파일 컴파일 중 Leaderboards.cpp)
+C:\Users\User\Downloads\sdk\steamworksexample\stdafx.h(1,1): warning C4819: 현재 코드 페이지(949)에서 표시할 수 없는 문자가 파일에 들어 있습니다. 데이터가 손실되지 않게 하려면 해당 파일을 유니코드 형식으로 저장하십시오. (소스 파일 컴파일 중 Inventory.cpp)
+C:\Users\User\Downloads\sdk\steamworksexample\ServerBrowser.cpp(1,1): error C2220: 다음 경고는 오류로 처리됩니다.
+C:\Users\User\Downloads\sdk\steamworksexample\ServerBrowser.cpp(1,1): warning C4819: 현재 코드 페이지(949)에서 표시할 수 없는 문자가 파일에 들어 있습니다. 데이터가 손실되지 않게 하려면 해당 파일을 유니코드 형식으로 저장하십시오.
+C:\Users\User\Downloads\sdk\steamworksexample\stdafx.h(1,1): warning C4819: 현재 코드 페이지(949)에서 표시할 수 없는 문자가 파일에 들어 있습니다. 데이터가 손실되지 않게 하려면 해당 파일을 유니코드 형식으로 저장하십시오. (소스 파일 컴파일 중 ServerBrowser.cpp)
+C:\Users\User\Downloads\sdk\steamworksexample\MainMenu.cpp(1,1): error C2220: 다음 경고는 오류로 처리됩니다.
+C:\Users\User\Downloads\sdk\steamworksexample\MainMenu.cpp(1,1): warning C4819: 현재 코드 페이지(949)에서 표시할 수 없는 문자가 파일에 들어 있습니다. 데이터가 손실되지 않게 하려면 해당 파일을 유니코드 형식으로 저장하십시오.
+C:\Users\User\Downloads\sdk\steamworksexample\stdafx.h(1,1): warning C4819: 현재 코드 페이지(949)에서 표시할 수 없는 문자가 파일에 들어 있습니다. 데이터가 손실되지 않게 하려면 해당 파일을 유니코드 형식으로 저장하십시오. (소스 파일 컴파일 중 MainMenu.cpp)
+C:\Users\User\Downloads\sdk\steamworksexample\musicplayer.cpp(1,1): error C2220: 다음 경고는 오류로 처리됩니다.
+C:\Users\User\Downloads\sdk\steamworksexample\musicplayer.cpp(1,1): warning C4819: 현재 코드 페이지(949)에서 표시할 수 없는 문자가 파일에 들어 있습니다. 데이터가 손실되지 않게 하려면 해당 파일을 유니코드 형식으로 저장하십시오.
+C:\Users\User\Downloads\sdk\steamworksexample\stdafx.h(1,1): warning C4819: 현재 코드 페이지(949)에서 표시할 수 없는 문자가 파일에 들어 있습니다. 데이터가 손실되지 않게 하려면 해당 파일을 유니코드 형식으로 저장하십시오. (소스 파일 컴파일 중 musicplayer.cpp)
+C:\Users\User\Downloads\sdk\steamworksexample\OverlayExamples.cpp(1,1): error C2220: 다음 경고는 오류로 처리됩니다.
+C:\Users\User\Downloads\sdk\steamworksexample\OverlayExamples.cpp(1,1): warning C4819: 현재 코드 페이지(949)에서 표시할 수 없는 문자가 파일에 들어 있습니다. 데이터가 손실되지 않게 하려면 해당 파일을 유니코드 형식으로 저장하십시오.
+C:\Users\User\Downloads\sdk\steamworksexample\PhotonBeam.cpp(1,1): error C2220: 다음 경고는 오류로 처리됩니다.
+C:\Users\User\Downloads\sdk\steamworksexample\PhotonBeam.cpp(1,1): warning C4819: 현재 코드 페이지(949)에서 표시할 수 없는 문자가 파일에 들어 있습니다. 데이터가 손실되지 않게 하려면 해당 파일을 유니코드 형식으로 저장하십시오.
+C:\Users\User\Downloads\sdk\steamworksexample\stdafx.h(1,1): warning C4819: 현재 코드 페이지(949)에서 표시할 수 없는 문자가 파일에 들어 있습니다. 데이터가 손실되지 않게 하려면 해당 파일을 유니코드 형식으로 저장하십시오. (소스 파일 컴파일 중 OverlayExamples.cpp)
+C:\Users\User\Downloads\sdk\steamworksexample\stdafx.h(1,1): warning C4819: 현재 코드 페이지(949)에서 표시할 수 없는 문자가 파일에 들어 있습니다. 데이터가 손실되지 않게 하려면 해당 파일을 유니코드 형식으로 저장하십시오. (소스 파일 컴파일 중 PhotonBeam.cpp)
+C:\Users\User\Downloads\sdk\steamworksexample\p2pauth.cpp(1,1): error C2220: 다음 경고는 오류로 처리됩니다.
+C:\Users\User\Downloads\sdk\steamworksexample\p2pauth.cpp(1,1): warning C4819: 현재 코드 페이지(949)에서 표시할 수 없는 문자가 파일에 들어 있습니다. 데이터가 손실되지 않게 하려면 해당 파일을 유니코드 형식으로 저장하십시오.
+C:\Users\User\Downloads\sdk\steamworksexample\stdafx.h(1,1): warning C4819: 현재 코드 페이지(949)에서 표시할 수 없는 문자가 파일에 들어 있습니다. 데이터가 손실되지 않게 하려면 해당 파일을 유니코드 형식으로 저장하십시오. (소스 파일 컴파일 중 p2pauth.cpp)
+C:\Users\User\Downloads\sdk\steamworksexample\QuitMenu.cpp(1,1): error C2220: 다음 경고는 오류로 처리됩니다.
+C:\Users\User\Downloads\sdk\steamworksexample\SpaceWarClient.cpp(1,1): error C2220: 다음 경고는 오류로 처리됩니다.
+C:\Users\User\Downloads\sdk\steamworksexample\QuitMenu.cpp(1,1): warning C4819: 현재 코드 페이지(949)에서 표시할 수 없는 문자가 파일에 들어 있습니다. 데이터가 손실되지 않게 하려면 해당 파일을 유니코드 형식으로 저장하십시오.
+C:\Users\User\Downloads\sdk\steamworksexample\SpaceWarClient.cpp(1,1): warning C4819: 현재 코드 페이지(949)에서 표시할 수 없는 문자가 파일에 들어 있습니다. 데이터가 손실되지 않게 하려면 해당 파일을 유니코드 형식으로 저장하십시오.
+C:\Users\User\Downloads\sdk\steamworksexample\stdafx.h(1,1): warning C4819: 현재 코드 페이지(949)에서 표시할 수 없는 문자가 파일에 들어 있습니다. 데이터가 손실되지 않게 하려면 해당 파일을 유니코드 형식으로 저장하십시오. (소스 파일 컴파일 중 QuitMenu.cpp)
+C:\Users\User\Downloads\sdk\steamworksexample\stdafx.h(1,1): warning C4819: 현재 코드 페이지(949)에서 표시할 수 없는 문자가 파일에 들어 있습니다. 데이터가 손실되지 않게 하려면 해당 파일을 유니코드 형식으로 저장하십시오. (소스 파일 컴파일 중 SpaceWarClient.cpp)
+C:\Users\User\Downloads\sdk\steamworksexample\stdafx.h(1,1): error C2220: 다음 경고는 오류로 처리됩니다. (소스 파일 컴파일 중 RemoteStorage.cpp)
+C:\Users\User\Downloads\sdk\steamworksexample\stdafx.h(1,1): warning C4819: 현재 코드 페이지(949)에서 표시할 수 없는 문자가 파일에 들어 있습니다. 데이터가 손실되지 않게 하려면 해당 파일을 유니코드 형식으로 저장하십시오. (소스 파일 컴파일 중 RemoteStorage.cpp)
+C:\Users\User\Downloads\sdk\steamworksexample\Ship.cpp(1,1): error C2220: 다음 경고는 오류로 처리됩니다.
+C:\Users\User\Downloads\sdk\steamworksexample\Ship.cpp(1,1): warning C4819: 현재 코드 페이지(949)에서 표시할 수 없는 문자가 파일에 들어 있습니다. 데이터가 손실되지 않게 하려면 해당 파일을 유니코드 형식으로 저장하십시오.
+C:\Users\User\Downloads\sdk\steamworksexample\stdafx.h(1,1): warning C4819: 현재 코드 페이지(949)에서 표시할 수 없는 문자가 파일에 들어 있습니다. 데이터가 손실되지 않게 하려면 해당 파일을 유니코드 형식으로 저장하십시오. (소스 파일 컴파일 중 Ship.cpp)
+C:\Users\User\Downloads\sdk\steamworksexample\SpaceWarServer.cpp(1,1): error C2220: 다음 경고는 오류로 처리됩니다.
+C:\Users\User\Downloads\sdk\steamworksexample\SpaceWarServer.cpp(1,1): warning C4819: 현재 코드 페이지(949)에서 표시할 수 없는 문자가 파일에 들어 있습니다. 데이터가 손실되지 않게 하려면 해당 파일을 유니코드 형식으로 저장하십시오.
+C:\Users\User\Downloads\sdk\steamworksexample\RemotePlay.cpp(1,1): error C2220: 다음 경고는 오류로 처리됩니다.
+C:\Users\User\Downloads\sdk\steamworksexample\RemotePlay.cpp(1,1): warning C4819: 현재 코드 페이지(949)에서 표시할 수 없는 문자가 파일에 들어 있습니다. 데이터가 손실되지 않게 하려면 해당 파일을 유니코드 형식으로 저장하십시오.
+C:\Users\User\Downloads\sdk\steamworksexample\stdafx.h(1,1): warning C4819: 현재 코드 페이지(949)에서 표시할 수 없는 문자가 파일에 들어 있습니다. 데이터가 손실되지 않게 하려면 해당 파일을 유니코드 형식으로 저장하십시오. (소스 파일 컴파일 중 SpaceWarServer.cpp)
+C:\Users\User\Downloads\sdk\steamworksexample\stdafx.h(1,1): warning C4819: 현재 코드 페이지(949)에서 표시할 수 없는 문자가 파일에 들어 있습니다. 데이터가 손실되지 않게 하려면 해당 파일을 유니코드 형식으로 저장하십시오. (소스 파일 컴파일 중 RemotePlay.cpp)
+C:\Users\User\Downloads\sdk\steamworksexample\SpaceWarEntity.cpp(1,1): error C2220: 다음 경고는 오류로 처리됩니다.
+C:\Users\User\Downloads\sdk\steamworksexample\SpaceWarEntity.cpp(1,1): warning C4819: 현재 코드 페이지(949)에서 표시할 수 없는 문자가 파일에 들어 있습니다. 데이터가 손실되지 않게 하려면 해당 파일을 유니코드 형식으로 저장하십시오.
+C:\Users\User\Downloads\sdk\steamworksexample\remotestoragesync.cpp(1,1): error C2220: 다음 경고는 오류로 처리됩니다.
+C:\Users\User\Downloads\sdk\steamworksexample\remotestoragesync.cpp(1,1): warning C4819: 현재 코드 페이지(949)에서 표시할 수 없는 문자가 파일에 들어 있습니다. 데이터가 손실되지 않게 하려면 해당 파일을 유니코드 형식으로 저장하십시오.
+C:\Users\User\Downloads\sdk\steamworksexample\stdafx.h(1,1): warning C4819: 현재 코드 페이지(949)에서 표시할 수 없는 문자가 파일에 들어 있습니다. 데이터가 손실되지 않게 하려면 해당 파일을 유니코드 형식으로 저장하십시오. (소스 파일 컴파일 중 SpaceWarEntity.cpp)
+C:\Users\User\Downloads\sdk\steamworksexample\stdafx.h(1,1): warning C4819: 현재 코드 페이지(949)에서 표시할 수 없는 문자가 파일에 들어 있습니다. 데이터가 손실되지 않게 하려면 해당 파일을 유니코드 형식으로 저장하십시오. (소스 파일 컴파일 중 remotestoragesync.cpp)
+C:\Users\User\Downloads\sdk\steamworksexample\stdafx.h(60,10): fatal error C1083: 포함 파일을 열 수 없습니다. 'd3dx9.h': No such file or directory (소스 파일 컴파일 중 Main.cpp)
+C:\Users\User\Downloads\sdk\steamworksexample\stdafx.h(60,10): fatal error C1083: 포함 파일을 열 수 없습니다. 'd3dx9.h': No such file or directory (소스 파일 컴파일 중 stdafx.cpp)
+C:\Users\User\Downloads\sdk\steamworksexample\stdafx.h(60,10): fatal error C1083: 포함 파일을 열 수 없습니다. 'd3dx9.h': No such file or directory (소스 파일 컴파일 중 BaseMenu.cpp)
+C:\Users\User\Downloads\sdk\steamworksexample\stdafx.h(60,10): fatal error C1083: 포함 파일을 열 수 없습니다. 'd3dx9.h': No such file or directory (소스 파일 컴파일 중 gameenginewin32.cpp)
+C:\Users\User\Downloads\sdk\steamworksexample\stdafx.h(60,10): fatal error C1083: 포함 파일을 열 수 없습니다. 'd3dx9.h': No such file or directory (소스 파일 컴파일 중 VectorEntity.cpp)
+C:\Users\User\Downloads\sdk\steamworksexample\stdafx.h(60,10): fatal error C1083: 포함 파일을 열 수 없습니다. 'd3dx9.h': No such file or directory (소스 파일 컴파일 중 htmlsurface.cpp)
+  StarField.cpp
+  StatsAndAchievements.cpp
+  Sun.cpp
+  timeline.cpp
+  voicechat.cpp
+C:\Users\User\Downloads\sdk\steamworksexample\StarField.cpp(1,1): error C2220: 다음 경고는 오류로 처리됩니다.
+C:\Users\User\Downloads\sdk\steamworksexample\stdafx.h(1,1): error C2220: 다음 경고는 오류로 처리됩니다. (소스 파일 컴파일 중 timeline.cpp)
+C:\Users\User\Downloads\sdk\steamworksexample\StarField.cpp(1,1): warning C4819: 현재 코드 페이지(949)에서 표시할 수 없는 문자가 파일에 들어 있습니다. 데이터가 손실되지 않게 하려면 해당 파일을 유니코드 형식으로 저장하십시오.
+C:\Users\User\Downloads\sdk\steamworksexample\stdafx.h(1,1): warning C4819: 현재 코드 페이지(949)에서 표시할 수 없는 문자가 파일에 들어 있습니다. 데이터가 손실되지 않게 하려면 해당 파일을 유니코드 형식으로 저장하십시오. (소스 파일 컴파일 중 timeline.cpp)
+C:\Users\User\Downloads\sdk\steamworksexample\voicechat.cpp(1,1): error C2220: 다음 경고는 오류로 처리됩니다.
+C:\Users\User\Downloads\sdk\steamworksexample\voicechat.cpp(1,1): warning C4819: 현재 코드 페이지(949)에서 표시할 수 없는 문자가 파일에 들어 있습니다. 데이터가 손실되지 않게 하려면 해당 파일을 유니코드 형식으로 저장하십시오.
+C:\Users\User\Downloads\sdk\steamworksexample\stdafx.h(1,1): warning C4819: 현재 코드 페이지(949)에서 표시할 수 없는 문자가 파일에 들어 있습니다. 데이터가 손실되지 않게 하려면 해당 파일을 유니코드 형식으로 저장하십시오. (소스 파일 컴파일 중 StarField.cpp)
+C:\Users\User\Downloads\sdk\steamworksexample\stdafx.h(1,1): warning C4819: 현재 코드 페이지(949)에서 표시할 수 없는 문자가 파일에 들어 있습니다. 데이터가 손실되지 않게 하려면 해당 파일을 유니코드 형식으로 저장하십시오. (소스 파일 컴파일 중 voicechat.cpp)
+C:\Users\User\Downloads\sdk\steamworksexample\stdafx.h(60,10): fatal error C1083: 포함 파일을 열 수 없습니다. 'd3dx9.h': No such file or directory (소스 파일 컴파일 중 clanchatroom.cpp)
+C:\Users\User\Downloads\sdk\steamworksexample\Sun.cpp(1,1): error C2220: 다음 경고는 오류로 처리됩니다.
+C:\Users\User\Downloads\sdk\steamworksexample\Sun.cpp(1,1): warning C4819: 현재 코드 페이지(949)에서 표시할 수 없는 문자가 파일에 들어 있습니다. 데이터가 손실되지 않게 하려면 해당 파일을 유니코드 형식으로 저장하십시오.
+C:\Users\User\Downloads\sdk\steamworksexample\stdafx.h(1,1): warning C4819: 현재 코드 페이지(949)에서 표시할 수 없는 문자가 파일에 들어 있습니다. 데이터가 손실되지 않게 하려면 해당 파일을 유니코드 형식으로 저장하십시오. (소스 파일 컴파일 중 Sun.cpp)
+C:\Users\User\Downloads\sdk\steamworksexample\StatsAndAchievements.cpp(1,1): error C2220: 다음 경고는 오류로 처리됩니다.
+C:\Users\User\Downloads\sdk\steamworksexample\StatsAndAchievements.cpp(1,1): warning C4819: 현재 코드 페이지(949)에서 표시할 수 없는 문자가 파일에 들어 있습니다. 데이터가 손실되지 않게 하려면 해당 파일을 유니코드 형식으로 저장하십시오.
+C:\Users\User\Downloads\sdk\steamworksexample\stdafx.h(1,1): warning C4819: 현재 코드 페이지(949)에서 표시할 수 없는 문자가 파일에 들어 있습니다. 데이터가 손실되지 않게 하려면 해당 파일을 유니코드 형식으로 저장하십시오. (소스 파일 컴파일 중 StatsAndAchievements.cpp)
+C:\Users\User\Downloads\sdk\steamworksexample\stdafx.h(60,10): fatal error C1083: 포함 파일을 열 수 없습니다. 'd3dx9.h': No such file or directory (소스 파일 컴파일 중 ItemStore.cpp)
+C:\Users\User\Downloads\sdk\steamworksexample\stdafx.h(60,10): fatal error C1083: 포함 파일을 열 수 없습니다. 'd3dx9.h': No such file or directory (소스 파일 컴파일 중 ServerBrowser.cpp)
+C:\Users\User\Downloads\sdk\steamworksexample\stdafx.h(60,10): fatal error C1083: 포함 파일을 열 수 없습니다. 'd3dx9.h': No such file or directory (소스 파일 컴파일 중 Friends.cpp)
+C:\Users\User\Downloads\sdk\steamworksexample\stdafx.h(60,10): fatal error C1083: 포함 파일을 열 수 없습니다. 'd3dx9.h': No such file or directory (소스 파일 컴파일 중 Lobby.cpp)
+C:\Users\User\Downloads\sdk\steamworksexample\stdafx.h(60,10): fatal error C1083: 포함 파일을 열 수 없습니다. 'd3dx9.h': No such file or directory (소스 파일 컴파일 중 musicplayer.cpp)
+C:\Users\User\Downloads\sdk\steamworksexample\stdafx.h(60,10): fatal error C1083: 포함 파일을 열 수 없습니다. 'd3dx9.h': No such file or directory (소스 파일 컴파일 중 connectingmenu.cpp)
+C:\Users\User\Downloads\sdk\steamworksexample\stdafx.h(60,10): fatal error C1083: 포함 파일을 열 수 없습니다. 'd3dx9.h': No such file or directory (소스 파일 컴파일 중 Ship.cpp)
+C:\Users\User\Downloads\sdk\steamworksexample\stdafx.h(60,10): fatal error C1083: 포함 파일을 열 수 없습니다. 'd3dx9.h': No such file or directory (소스 파일 컴파일 중 RemotePlay.cpp)
+C:\Users\User\Downloads\sdk\steamworksexample\stdafx.h(60,10): fatal error C1083: 포함 파일을 열 수 없습니다. 'd3dx9.h': No such file or directory (소스 파일 컴파일 중 MainMenu.cpp)
+C:\Users\User\Downloads\sdk\steamworksexample\stdafx.h(60,10): fatal error C1083: 포함 파일을 열 수 없습니다. 'd3dx9.h': No such file or directory (소스 파일 컴파일 중 Leaderboards.cpp)
+C:\Users\User\Downloads\sdk\steamworksexample\stdafx.h(60,10): fatal error C1083: 포함 파일을 열 수 없습니다. 'd3dx9.h': No such file or directory (소스 파일 컴파일 중 Inventory.cpp)
+C:\Users\User\Downloads\sdk\steamworksexample\stdafx.h(60,10): fatal error C1083: 포함 파일을 열 수 없습니다. 'd3dx9.h': No such file or directory (소스 파일 컴파일 중 QuitMenu.cpp)
+C:\Users\User\Downloads\sdk\steamworksexample\stdafx.h(60,10): fatal error C1083: 포함 파일을 열 수 없습니다. 'd3dx9.h': No such file or directory (소스 파일 컴파일 중 remotestoragesync.cpp)
+C:\Users\User\Downloads\sdk\steamworksexample\stdafx.h(60,10): fatal error C1083: 포함 파일을 열 수 없습니다. 'd3dx9.h': No such file or directory (소스 파일 컴파일 중 OverlayExamples.cpp)
+C:\Users\User\Downloads\sdk\steamworksexample\stdafx.h(60,10): fatal error C1083: 포함 파일을 열 수 없습니다. 'd3dx9.h': No such file or directory (소스 파일 컴파일 중 SpaceWarServer.cpp)
+C:\Users\User\Downloads\sdk\steamworksexample\stdafx.h(60,10): fatal error C1083: 포함 파일을 열 수 없습니다. 'd3dx9.h': No such file or directory (소스 파일 컴파일 중 SpaceWarClient.cpp)
+C:\Users\User\Downloads\sdk\steamworksexample\stdafx.h(60,10): fatal error C1083: 포함 파일을 열 수 없습니다. 'd3dx9.h': No such file or directory (소스 파일 컴파일 중 PhotonBeam.cpp)
+C:\Users\User\Downloads\sdk\steamworksexample\stdafx.h(60,10): fatal error C1083: 포함 파일을 열 수 없습니다. 'd3dx9.h': No such file or directory (소스 파일 컴파일 중 RemoteStorage.cpp)
+C:\Users\User\Downloads\sdk\steamworksexample\stdafx.h(60,10): fatal error C1083: 포함 파일을 열 수 없습니다. 'd3dx9.h': No such file or directory (소스 파일 컴파일 중 p2pauth.cpp)
+C:\Users\User\Downloads\sdk\steamworksexample\stdafx.h(60,10): fatal error C1083: 포함 파일을 열 수 없습니다. 'd3dx9.h': No such file or directory (소스 파일 컴파일 중 SpaceWarEntity.cpp)
+C:\Users\User\Downloads\sdk\steamworksexample\stdafx.h(60,10): fatal error C1083: 포함 파일을 열 수 없습니다. 'd3dx9.h': No such file or directory (소스 파일 컴파일 중 StarField.cpp)
+C:\Users\User\Downloads\sdk\steamworksexample\stdafx.h(60,10): fatal error C1083: 포함 파일을 열 수 없습니다. 'd3dx9.h': No such file or directory (소스 파일 컴파일 중 StatsAndAchievements.cpp)
+C:\Users\User\Downloads\sdk\steamworksexample\stdafx.h(60,10): fatal error C1083: 포함 파일을 열 수 없습니다. 'd3dx9.h': No such file or directory (소스 파일 컴파일 중 timeline.cpp)
+C:\Users\User\Downloads\sdk\steamworksexample\stdafx.h(60,10): fatal error C1083: 포함 파일을 열 수 없습니다. 'd3dx9.h': No such file or directory (소스 파일 컴파일 중 Sun.cpp)
+C:\Users\User\Downloads\sdk\steamworksexample\stdafx.h(60,10): fatal error C1083: 포함 파일을 열 수 없습니다. 'd3dx9.h': No such file or directory (소스 파일 컴파일 중 voicechat.cpp)
