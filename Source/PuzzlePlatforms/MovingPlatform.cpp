@@ -1,4 +1,4 @@
-// Fill out your copyright notice in the Description page of Project Settings.
+癤�// Fill out your copyright notice in the Description page of Project Settings.
 
 
 #include "MovingPlatform.h"
@@ -14,11 +14,11 @@ void AMovingPlatform::BeginPlay()
 	Super::BeginPlay();
 	if (HasAuthority())
 	{
-		SetReplicates(true); //대상 복제
-		SetReplicateMovement(true); //대상 움직임 복제 
+		SetReplicates(true); 
+		SetReplicateMovement(true); 
 	};
 	GlobalStartLocation = GetActorLocation();
-	GlobalTargetLocation = GetTransform().TransformPosition(TargetLocation); //GetTransform().TransformPosition <<- 로컬->글로벌 트랜스폼으로 변경시킴 
+	GlobalTargetLocation = GetTransform().TransformPosition(TargetLocation); 
 }
 
 void AMovingPlatform::Tick(float DeltaTime)

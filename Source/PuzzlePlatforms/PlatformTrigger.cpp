@@ -13,7 +13,6 @@ APlatformTrigger::APlatformTrigger()
 	TriggerVolume =CreateDefaultSubobject<UBoxComponent>(FName("TriggerVolume"));
 	if (!ensure(TriggerVolume != nullptr)) return;
 	RootComponent = TriggerVolume;
-	// 델리게이트 바인딩 (보통 Begin Play에서 함)
 	TriggerVolume->OnComponentBeginOverlap.AddDynamic(this, &APlatformTrigger::OnMyComponentBeginOverlap);
 	TriggerVolume->OnComponentEndOverlap.AddDynamic(this, &APlatformTrigger::OnMyComponentEndOverlap);
 

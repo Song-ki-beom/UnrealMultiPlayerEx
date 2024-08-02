@@ -11,7 +11,7 @@
  * 
  */
 
-//FclassFinder :FClassFinder´Â ÄÄÆÄÀÏ Å¸ÀÓ¿¡ ¿¡¼ÂÀ» Ã£°í ·ÎµåÇÒ ¶§ »ç¿ëÇÏ´Â ÅÛÇÃ¸´ Å¬·¡½º 
+//FclassFinder :FClassFinderï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ Å¸ï¿½Ó¿ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ Ã£ï¿½ï¿½ ï¿½Îµï¿½ï¿½ï¿½ ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½Ï´ï¿½ ï¿½ï¿½ï¿½Ã¸ï¿½ Å¬ï¿½ï¿½ï¿½ï¿½ 
 
 UCLASS()
 class PUZZLEPLATFORMS_API UPuzzlePlatformGameInstance : public UGameInstance, public IMenuInterface 
@@ -32,7 +32,7 @@ public:		UPuzzlePlatformGameInstance
 
 
 		
-	UFUNCTION(Exec) //Exec : °ÔÀÓ ³» ÄÜ¼ÖÀÌ³ª °³¹ßÀÚ ¸í·ÉÀ» ÅëÇØ Á÷Á¢ È£ÃâÇÒ ¼ö ÀÖ´Â ÇÔ¼ö¸¦ Á¤ÀÇ , GameInstance¿¡¼­ È£Ãâ °¡´É 
+	UFUNCTION(Exec) 
 		void Host();
 
 	UFUNCTION(Exec)

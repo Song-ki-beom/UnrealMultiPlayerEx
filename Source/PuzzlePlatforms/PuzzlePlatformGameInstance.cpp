@@ -1,4 +1,4 @@
-// Fill out your copyright notice in the Description page of Project Settings.
+ï»¿// Fill out your copyright notice in the Description page of Project Settings.
 
 
 #include "PuzzlePlatformGameInstance.h"
@@ -9,6 +9,8 @@
 #include "Widgets/SWidget.h"
 #include "MenuSystem/MainMenu.h"
 #include "GameFramework/PlayerController.h"
+#include "OnlineSubsystem.h"
+
 UPuzzlePlatformGameInstance::UPuzzlePlatformGameInstance(const FObjectInitializer& ObjectInitializer) 
 {
 
@@ -17,15 +19,33 @@ UPuzzlePlatformGameInstance::UPuzzlePlatformGameInstance(const FObjectInitialize
 
 	MenuClass = MenuBPClass.Class;
 
-	//UE_LOG(LogTemp, Warning, TEXT("Found class %s"),*PlatformTriggerBPClass.Class->GetName()); //Å¬·¡½º °´Ã¼¿¡ ´ëÇÑ Æ÷ÀÎÅÍ 
-
+	
 
 
 }
 
 void UPuzzlePlatformGameInstance::Init()
 {
-	UE_LOG(LogTemp, Warning, TEXT("Found class %s"), *MenuClass->GetName());
+	IOnlineSubsystem* Subsystem = IOnlineSubsystem::Get();
+	
+	if (Subsystem != nullptr)
+	{
+		UE_LOG(LogTemp, Warning, TEXT("Found Subsystem %s"), *Subsystem->GetSubsystemName().ToString());
+
+		//ì„¸ì…˜ ìƒì„± , ì„¸ì…˜ ì°¾ê¸°, ì„¸ì…˜ ì°¸ê°€ , ì„¸ì…˜ ì†Œë©¸ ë“± ì„¸ì…˜ì˜ ì „ë°˜ì ì¸ íë¦„ì„ ê´€ë¦¬í•˜ëŠ” ì¸í„°íŽ˜ì´ìŠ¤ (SessionInterface)
+		IOnlineSessionPtr SessionInterface = Subsystem->GetSessionInterface();
+		
+		if (SessionInterface.IsValid())
+		{
+			UE_LOG(LogTemp, Warning, TEXT("Found Session Interface"));
+
+		}
+	}
+	else 
+	{
+		UE_LOG(LogTemp, Warning, TEXT("Found no Subsystem"));
+
+	}
 
 
 	
@@ -63,7 +83,7 @@ void UPuzzlePlatformGameInstance::Host()
 
 
 	
-	//listen <<- ÇÃ·¹ÀÌ¾î°¡ Á÷Á¢ È£½ºÆÃÇÏ´Â ¼­¹ö 
+	
 
 }
 
