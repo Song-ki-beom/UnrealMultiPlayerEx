@@ -16,6 +16,7 @@ class PUZZLEPLATFORMS_API UMainMenu : public UUserWidget
 	GENERATED_BODY()
 
 public:
+	UMainMenu(const FObjectInitializer& ObjectInitializer);  
 	void SetMenuInterface(IMenuInterface* MenuInterfaces);
 
 	void SetUp();
@@ -37,10 +38,14 @@ private:
 		void QuitPressed();
 
 private:
+		TSubclassOf<class UUserWidget> ServerRowClass;
+
 		UPROPERTY(meta = (BindWidget))
 			class UButton* HostButton;
 		UPROPERTY(meta = (BindWidget))
 			class UButton* JoinButton;
+		UPROPERTY(meta = (BindWidget))
+			class UPanelWidget* ServerList;
 		UPROPERTY(meta = (BindWidget))
 			class UButton* QuitButton;
 		UPROPERTY(meta = (BindWidget))
@@ -53,8 +58,6 @@ private:
 			class UWidget* JoinMenu;
 		UPROPERTY(meta = (BindWidget))
 			class UWidget* MainMenu;
-		UPROPERTY(meta = (BindWidget))
-			class UEditableTextBox* IPAddressField;
 		IMenuInterface* MenuInterface;
 
 };
