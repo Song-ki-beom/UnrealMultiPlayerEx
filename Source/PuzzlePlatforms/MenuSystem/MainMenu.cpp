@@ -7,6 +7,7 @@
 #include "UObject/ConstructorHelpers.h"
 #include "ServerRow.h"
 #include "Components/EditableTextBox.h"
+#include "Components/TextBlock.h"
 #include "GameFramework/PlayerController.h"
 
 UMainMenu::UMainMenu(const FObjectInitializer& ObjectInitializer) :Super(ObjectInitializer)
@@ -22,6 +23,29 @@ UMainMenu::UMainMenu(const FObjectInitializer& ObjectInitializer) :Super(ObjectI
 void UMainMenu::SetMenuInterface(IMenuInterface* MenuInterfaces)
 {
 	this->MenuInterface = MenuInterfaces;
+
+
+}
+void UMainMenu::SetServerList(TArray<FString> ServerNames)
+{
+	UWorld* World = this->GetWorld();
+	if (!ensure(World != nullptr)) return;
+
+	ServerList->ClearChildren();
+
+	uint32 i = 0;
+	for (const FString& ServerName : ServerNames)
+	{
+		UServerRow* Row = CreateWidget<UServerRow>(World, ServerRowClass);
+		if (!ensure(Row != nullptr)) return;
+		Row->ServerName->SetText(FText::FromString(ServerName)); //FText 형식이므로 FromString 주석을 추가한다.
+		Row->Setup(this, i);
+		++i;
+		
+		ServerList->AddChild(Row); //Scroll View ServerList 에 ServerRow 추가
+	}
+	
+
 
 
 }
@@ -54,9 +78,17 @@ void UMainMenu::TearDown()
 	APlayerController* PlayerController = World->GetFirstPlayerController();
 	if (!ensure(PlayerController != nullptr)) return;
 
-	FInputModeGameOnly InputModeData;//Default
+	FInputModeGameOnly InputModeData; // 초기화 없으면 Default 모드 
 	PlayerController->SetInputMode(InputModeData);
 	PlayerController->bShowMouseCursor = true;
+
+
+}
+
+
+void UMainMenu::SelectIndex(uint32 Index)
+{
+	SelectedIndex = Index; //TOptional 에는 등호 할당 연산자에 대한 오버로드가 있음
 
 
 }
@@ -92,30 +124,40 @@ void UMainMenu::HostServer()
 	}
 }
 
+
+
 void UMainMenu::JoinServer()
 {
-	if (MenuInterface != nullptr)
+	if (SelectedIndex.IsSet()&& MenuInterface != nullptr) //TOptional 의 IsSet 함수를 통해 값이 존재하는지를 체크 
 	{
-		/*if (!ensure(IPAddressField != nullptr)) return;
+		UE_LOG(LogTemp, Warning, TEXT("Selected index %d"), SelectedIndex.GetValue()); //TOptional 의 값이 존재할때, GetValue 를 통해 값을 호출
+		MenuInterface->Join(SelectedIndex.GetValue()); // 선택된 버튼의 인덱스를 통해 Join 함수 ->ClientTravel 실행 
+
+	} 
+	else
+	{
+		UE_LOG(LogTemp, Warning, TEXT("Selected index not Set"));
+		
+	}
+
+
+	
+	/*	if (!ensure(IPAddressField != nullptr)) return;
 		const FString& Address = IPAddressField->GetText().ToString();*/
 		
-		//MenuInterface->Join(Address);
-		UWorld* World = this->GetWorld();
-		if (!ensure(World != nullptr)) return;
-
-		UServerRow* Row = CreateWidget<UServerRow>(this, ServerRowClass);
-		if (!ensure(Row != nullptr)) return;
-
-		ServerList->AddChild(Row);
-	}
+	
+	
 }
 
 void UMainMenu::OpenJoinMenu()
 {
 	if (!ensure(MenuInterface != nullptr)) return;
 	if (!ensure(JoinMenu != nullptr)) return;
-
 	MenuSwitcher->SetActiveWidget(JoinMenu);
+	if (MenuInterface != nullptr)
+	{
+		MenuInterface->RefreshServerList();
+	}
 }
 
 void UMainMenu::OpenMainMenu()

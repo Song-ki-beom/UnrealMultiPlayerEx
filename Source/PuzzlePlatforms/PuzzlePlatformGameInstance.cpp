@@ -36,18 +36,8 @@ void UPuzzlePlatformGameInstance::Init()
 		SessionInterface = Subsystem->GetSessionInterface();
 		SessionInterface->OnCreateSessionCompleteDelegates.AddUObject(this, &UPuzzlePlatformGameInstance::OnCreateSessionComplete);
 		SessionInterface->OnDestroySessionCompleteDelegates.AddUObject(this, &UPuzzlePlatformGameInstance::OnDestroySessionComplete);
-
-		// c++ raw 포인터를 TShared 포인터 (참조 카운트) 형식으로 바꿈 
-		SessionSearch = MakeShareable(new FOnlineSessionSearch());
-		if (SessionSearch.IsValid())
-		{
-
-			//세션 find 시작 
-			UE_LOG(LogTemp, Warning, TEXT("Starting Find Session"));
-			SessionSearch->bIsLanQuery = true;
-			SessionInterface->FindSessions(0, SessionSearch.ToSharedRef());
-			SessionInterface->OnFindSessionsCompleteDelegates.AddUObject(this, &UPuzzlePlatformGameInstance::OnFindSessionsComplete);
-		}
+		SessionInterface->OnJoinSessionCompleteDelegates.AddUObject(this, &UPuzzlePlatformGameInstance::OnJoinSessionComplete);
+		
 	}
 
 	else 
@@ -137,15 +127,41 @@ void UPuzzlePlatformGameInstance::OnDestroySessionComplete(FName SessionName, bo
 
 void UPuzzlePlatformGameInstance::OnFindSessionsComplete(bool Success)
 {
-		if (Success && SessionSearch.IsValid())
+		if (Success && SessionSearch.IsValid() && Menu != nullptr)
 		{
 			UE_LOG(LogTemp, Warning, TEXT("Find Session Complete"));
+
+			TArray<FString> ServerNames;
 			for  (const FOnlineSessionSearchResult& SearchResult : SessionSearch -> SearchResults)
 			{
 				UE_LOG(LogTemp, Warning, TEXT("Find Session names: %s"), *SearchResult.GetSessionIdStr());
+				ServerNames.Add(SearchResult.GetSessionIdStr());
 
 			}
+			Menu->SetServerList(ServerNames);
 		}
+}
+
+void UPuzzlePlatformGameInstance::OnJoinSessionComplete(FName SessionName, EOnJoinSessionCompleteResult::Type Result)
+{
+	if (!SessionInterface.IsValid()) return;
+
+	FString Address; 
+	if (!SessionInterface->GetResolvedConnectString(SessionName, Address)) 
+	{
+		UE_LOG(LogTemp, Warning, TEXT("Could not get connect string."));
+		return;
+	};
+
+	UEngine* Engine = GetEngine();
+	if (!ensure(Engine != nullptr)) return;
+
+	Engine->AddOnScreenDebugMessage(0, 5.f, FColor::Green, FString::Printf(TEXT("Joining %s"), *Address));
+
+	APlayerController* PlayerController = GetFirstLocalPlayerController();
+	if (!ensure(PlayerController != nullptr)) return;
+
+	PlayerController->ClientTravel(Address, TRAVEL_Absolute); //Address 의 세션으로 레벨 이동 
 }
 
 void UPuzzlePlatformGameInstance::CreateSession()
@@ -153,31 +169,49 @@ void UPuzzlePlatformGameInstance::CreateSession()
 	if (SessionInterface.IsValid()) 
 	{
 		FOnlineSessionSettings SessionSettings;
-		SessionSettings.bIsLANMatch = true; // Lan 매칭만 설정
+		SessionSettings.bIsLANMatch = false; // true = Lan 매칭만 설정
 		SessionSettings.NumPublicConnections = 2; //세션 최대 플레이어 
 		SessionSettings.bShouldAdvertise = true; // broadcast? 광고 게시 
+		SessionSettings.bUsesPresence = true;
 		SessionInterface->CreateSession(0, SESSION_NAME, SessionSettings);
 	}
 
 	
 }
 
-void UPuzzlePlatformGameInstance::Join(const FString& Address)
+void UPuzzlePlatformGameInstance::Join(uint32 Index)
 {
+	if (!SessionInterface.IsValid()) return;
+	if (!SessionSearch.IsValid()) return;
+
+
 	if (Menu != nullptr)
 	{
 		Menu->TearDown();
 	}
 
-	UEngine* Engine = GetEngine();
-	if (!ensure(Engine != nullptr)) return;
-	Engine->AddOnScreenDebugMessage(0, 5.f, FColor::Green, FString::Printf(TEXT("Joining %s"), *Address));
+	SessionInterface->JoinSession(0, SESSION_NAME, SessionSearch->SearchResults[Index]);
 
-	APlayerController* PlayerController = GetFirstLocalPlayerController();
-	if (!ensure(PlayerController != nullptr)) return;
+	
 
-	PlayerController->ClientTravel(Address, TRAVEL_Absolute);
 
+}
+
+void UPuzzlePlatformGameInstance::RefreshServerList()
+{
+	// c++ raw 포인터를 TShared 포인터 (참조 카운트) 형식으로 바꿈 
+	SessionSearch = MakeShareable(new FOnlineSessionSearch());
+	if (SessionSearch.IsValid())
+	{
+
+		//세션 find 시작 
+		UE_LOG(LogTemp, Warning, TEXT("Starting Find Session"));
+		//SessionSearch->bIsLanQuery = true;
+		SessionSearch->MaxSearchResults = 100;
+		SessionSearch->QuerySettings.Set(SEARCH_PRESENCE,true,EOnlineComparisonOp::Equals);
+		SessionInterface->FindSessions(0, SessionSearch.ToSharedRef()); //Null 이 허용되지 않는 참조 카운트 포인터 ToSharedRef 를 사용. 
+		SessionInterface->OnFindSessionsCompleteDelegates.AddUObject(this, &UPuzzlePlatformGameInstance::OnFindSessionsComplete);
+	}
 
 }
 

@@ -18,9 +18,10 @@ class PUZZLEPLATFORMS_API UMainMenu : public UUserWidget
 public:
 	UMainMenu(const FObjectInitializer& ObjectInitializer);  
 	void SetMenuInterface(IMenuInterface* MenuInterfaces);
-
+	void SetServerList(TArray<FString> ServerNames);
 	void SetUp();
 	void TearDown();
+	void SelectIndex(uint32 Index);
 
 protected:
 	virtual bool Initialize();
@@ -45,7 +46,7 @@ private:
 		UPROPERTY(meta = (BindWidget))
 			class UButton* JoinButton;
 		UPROPERTY(meta = (BindWidget))
-			class UPanelWidget* ServerList;
+			class UPanelWidget* ServerList; // UPanelWidget 은 자식을 허용할 수 있는 위젯 
 		UPROPERTY(meta = (BindWidget))
 			class UButton* QuitButton;
 		UPROPERTY(meta = (BindWidget))
@@ -59,5 +60,8 @@ private:
 		UPROPERTY(meta = (BindWidget))
 			class UWidget* MainMenu;
 		IMenuInterface* MenuInterface;
+
+		TOptional<uint32> SelectedIndex; //TOptional 을 통해 값이 null 일수도 있다는 것을 감안하여 getvalue 처리 
+
 
 };
